@@ -68,7 +68,19 @@ console.log(indiceDoMenor(array));
 
 // Requisito 4 - Crie a função maiorPalavra
 
+array = ['pedro', 'fernanda', 'mauricio', 'jose']
 
+function maiorPalavra(lista){
+  let maior = '';
+
+  for (let item of lista){
+    if (item.length > maior.length){
+      maior = item;
+    }
+  }
+
+  return maior
+}
 
 // Requisito 5 - Crie a função maisRepetido
 
