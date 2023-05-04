@@ -108,6 +108,20 @@ function maisRepetido(lista) {
 console.log(maisRepetido(array));
 // Requisito 6 - Crie a função somatorio
 
+function somatorio(number) {
+  let soma = 0;
+
+  if (number < 0) {
+    return "ERRO";
+  }
+
+  for(let index = 1; index <= number; index += 1) {
+    soma += index;
+  }
+
+  return soma;
+}
+
 // Requisito 7 - Crie a função verificaFimPalavra
 
 // Não modifique essas linhas
