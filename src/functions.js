@@ -1,6 +1,34 @@
 // Requisito 1 - Crie a função verificaPalindromo
 
+function invertePalavra(palavra){
+  let palavraInvertida = '';
+
+  for (let index = 0; index < palavra.length; index += 1){
+    palavraInvertida += palavra[(palavra.length - index) -1]
+  }
+
+  return palavraInvertida
+}
+
+function verificaPalindromo(palavra){
+  let palavraInvertida = invertePalavra(palavra);
+
+  if (palavraInvertida !== palavra) return false;
+
+  return true
+}
+
+let palavra = 'aboba';
+
+if (verificaPalindromo(palavra) === true){
+  console.log(palavra,'é um palindromo');
+}else{
+  console.log(palavra,'não é um palindromo');
+}
+
 // Requisito 2 - Crie a função indiceDoMaior
+
+
 
 // Requisito 3 - Crie a função indiceDoMenor
 
