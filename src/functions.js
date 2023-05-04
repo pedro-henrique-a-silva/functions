@@ -31,7 +31,7 @@ if (verificaPalindromo(palavra) === true){
 let array = [20, 33, 60, 7, 10, 1];
 
 function indiceDoMaior(lista){
-  let maiorValor = 0;
+  let maiorValor = lista[0];
   let indiceMaiorValor = 0;
 
   for (let index = 0; index < lista.length; index += 1){
@@ -44,11 +44,31 @@ function indiceDoMaior(lista){
   return indiceMaiorValor;
 }
 
-console.log(indiceDoMaior(array));
+// console.log(indiceDoMaior(array));
 
 // Requisito 3 - Crie a função indiceDoMenor
 
+array = [20, 33, 60, 7, 10, 10];
+
+function indiceDoMenor(lista){
+  let menorValor = lista[0];
+  let indiceMenorValor = 0;
+
+  for (let index = 0; index < lista.length; index += 1){
+    if (lista[index] < menorValor){
+      menorValor = lista[index];
+      indiceMenorValor = index;
+    }
+  }
+
+  return indiceMenorValor;
+}
+
+console.log(indiceDoMenor(array));
+
 // Requisito 4 - Crie a função maiorPalavra
+
+
 
 // Requisito 5 - Crie a função maisRepetido
 
