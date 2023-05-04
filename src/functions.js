@@ -28,7 +28,23 @@ if (verificaPalindromo(palavra) === true){
 
 // Requisito 2 - Crie a função indiceDoMaior
 
+let array = [20, 33, 60, 7, 10, 1];
 
+function indiceDoMaior(lista){
+  let maiorValor = 0;
+  let indiceMaiorValor = 0;
+
+  for (let index = 0; index < lista.length; index += 1){
+    if (lista[index] > maiorValor){
+      maiorValor = lista[index];
+      indiceMaiorValor = index;
+    }
+  }
+
+  return indiceMaiorValor;
+}
+
+console.log(indiceDoMaior(array));
 
 // Requisito 3 - Crie a função indiceDoMenor
 
