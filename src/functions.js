@@ -84,7 +84,7 @@ function maiorPalavra(lista) {
 
 // Requisito 5 - Crie a função maisRepetido
 
-let array = [2, 3, 3, 5, 3, 8, 2, 3];
+// let array = [2, 3, 3, 5, 3, 8, 2, 3];
 
 function maisRepetido(lista) {
   let maisFrequenteValor = 0;
@@ -105,17 +105,17 @@ function maisRepetido(lista) {
   return maisFrequenteValor;
 }
 
-console.log(maisRepetido(array));
+// console.log(maisRepetido(array));
 // Requisito 6 - Crie a função somatorio
 
 function somatorio(number) {
   let soma = 0;
 
   if (number < 0) {
-    return "ERRO";
+    return 'ERRO';
   }
 
-  for(let index = 1; index <= number; index += 1) {
+  for (let index = 1; index <= number; index += 1) {
     soma += index;
   }
 
@@ -123,6 +123,18 @@ function somatorio(number) {
 }
 
 // Requisito 7 - Crie a função verificaFimPalavra
+
+function verificaFimPalavra(word1, word2) {
+  let resultado = false;
+
+  if (word1.slice(-word2.length) === word2) {
+    resultado = true;
+  }
+
+  return resultado;
+}
+
+// console.log(verificaFimPalavra('pedro', 'dgo'));
 
 // Não modifique essas linhas
 module.exports = {
